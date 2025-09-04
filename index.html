@@ -1,37 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samiksha | Consultant & Data Strategy Expert</title>
   <style>
-    body {
+    /* ---- Reset ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: #f4f4f9;
-      text-align: center;
-      padding: 50px;
     }
-    h1 {
+
+    body {
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ---- Navbar ---- */
+    nav {
+      background: white;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 1.2rem;
+      font-weight: bold;
       color: #333;
     }
-    p {
-      color: #555;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #0077b6;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
       max-width: 600px;
+      margin: auto;
+    }
+
+    /* ---- Featured ---- */
+    .featured {
+      background: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .featured h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .featured-card {
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .featured-card h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-card p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #00b4d8;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Hi, I'm Samiksha 👋</h1>
-    <p>Consultant | Data Analysis & Strategy Expert</p>
-    <p>Driving Business Growth with AI Solutions 🚀</p>
-    <p>Connect with me on <a href="https://www.linkedin.com/">LinkedIn</a></p>
-  </div>
+  <!-- Navbar -->
+  <nav>
+    <h1>Samiksha</h1>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Consultant | Data Strategy Expert</h2>
+    <p>Driving Business Growth with AI Solutions.  
+       Passionate about solving complex problems with clarity and impact.</p>
+  </section>
+
+  <!-- Featured Post -->
+  <section class="featured">
+    <h3>Featured Insight</h3>
+    <div class="featured-card">
+      <h4>How AI is Transforming Consulting</h4>
+      <p>A perspective on how data-driven solutions reshape industries —  
+         from finance to strategy. <a href="#">Read more →</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Samiksha | Connect with me on
+      <a href="https://www.linkedin.com/">LinkedIn</a> ·
+      <a href="mailto:your@email.com">Email</a>
+    </p>
+  </footer>
 </body>
 </html>
